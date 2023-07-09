@@ -20,9 +20,29 @@ style: |
 
 <!-- _class: lead -->
 
-# Non-homogenous Markov Chains for ~~ขายประกัน~~ Actuarial Purposes
+# Using Non-homogenous Markov Chains to calculate when we (are expected) to die
 
-##### By Nawat Ngerncham (6380496)
+##### By a dying CS student (Nawat)
+
+---
+
+<!-- _header: Disclaimer -->
+
+## Disclaimer!
+
+The presentation is based on *simplified numeric* results!
+
+The actual math behind this topic is a lot more complicated than I expected, so a few things might be over-simplified.
+
+## Disclaimer! Part 2
+
+Nawat is in fact not dying and the person presenting is definitely not an evil clone.
+
+---
+
+<!-- _header: Introduction -->
+
+# What is a Non-homogenous Markov Chain?
 
 ---
 
