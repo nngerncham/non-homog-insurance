@@ -81,11 +81,11 @@ where $S$ is the state space.
 
 <!-- _class: lead -->
 
-# The Problem at Hand: the Live-Death Model
+# The Live-Death Model
 
 ---
 
-<!-- _header: The Problem at Hand: the Live-Death Model -->
+<!-- _header: The Live-Death Model -->
 
 ## Assumptions
 
@@ -95,7 +95,7 @@ where $S$ is the state space.
 
 ---
 
-<!-- _header: The Problem at Hand: the Live-Death Model -->
+<!-- _header: The Live-Death Model -->
 
 ### Ultimate Survival Model (USM)
 
@@ -116,9 +116,9 @@ where $x$ is the starting age and $t$ is the number of years left.
 
 ---
 
-<!-- _header: The Problem at Hand: the Live-Death Model -->
+<!-- _header: The Live-Death Model -->
 
-### Using the USM with NHMC
+### Using USM with NHMC
 
 Let $S = \{A \text{(Alive)}, D \text{(Dead)}\}$. Obviously, $D$ is a recurrent state. We want to find the transition probability $A \to D$. Denote
 
@@ -139,22 +139,54 @@ $$
 
 ---
 
-<!-- _header: The Problem at Hand: the Live-Death Model -->
+<!-- _header: The Live-Death Model -->
 
 ## Expected Time Left to Live
 
-There is a very clear and straightforward way to compute this:
 $$
-\text{E}[T] = \sum_{t=0}^\infty t \cdot {}_t q_x \approx 66.413
+\begin{align*}
+    \text{E}[T] &= \sum_{t=0}^\infty t \cdot p_{A, D}(t) \\
+                &= \sum_{t=0}^\infty t \cdot {}_t q_x \\
+                &\approx 66.413
+\end{align*}
 $$
 (i.e. you are expected to die at around age 86.)
 
 ---
 
-<!-- _header: The Problem at Hand: the Live-Death Model -->
+<!-- _header: The Live-Death Model -->
 
-## Expected Time Left to Live (MC-style)
+<img src="graphics/no_soes.jpg" class="meme" style="height: 100%"/>
 
+---
+
+<!-- _header: The Live-Death Model -->
+
+## Using First-step Analysis
+
+Let $\mu_{A, D}(t)$ be the expected hitting time at year $t$. We get
+$$
+\begin{align*}
+    \mu_{A, D}(t)
+        &= 1 + (1 - p_{A, D}(t)) \cdot \mu_{D, D} + p_{A, D}(t) \cdot \mu_{A, D}(t+1) \\
+        &= 1 + {}_t q_x\cdot\mu_{A, D}(t+1)
+\end{align*}
+$$
+and we have infinitely many of these.
+
+---
+
+<!-- _class: lead -->
+
+# Thank you!
+
+##### Credit to `kaisugi` on Github for the theme
+
+---
+
+<!-- _class: lead -->
+
+# The (More) General Model
 
 ---
 
