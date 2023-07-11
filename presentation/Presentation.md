@@ -240,9 +240,9 @@ Fitted with $f(x) = ax^4 + bx^3 + cx^2 + dx + k$
 
 Using the same strategy as before based on the previous graph, we have that
 $$
-\text{E}[T] \approx 66
+\text{E}[T] \approx 47
 $$
-(It's more like around 66-70 depending on the run.)
+(i.e. you are expected to die at age 67.)
 
 ---
 
