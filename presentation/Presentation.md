@@ -40,14 +40,6 @@ Nawat is in fact not dying and the person presenting is definitely not one of hi
 
 <!-- _header: Introduction -->
 
-## Non-homogenous Markov Chain
-
-A non-homogenous Markov Chain is a Markov Chain whose transition probability **depends** on time. However, it still ignores *the past*.
-
----
-
-<!-- _header: Introduction -->
-
 ## Non-homogenous Markov Chain (NHMC)
 
 A non-homogenous Markov Chain is a Markov Chain whose transition probability **depends** on time. However, it still ignores *the past*.
@@ -251,6 +243,12 @@ $$
 \text{E}[T] \approx 66
 $$
 (It's more like around 66-70 depending on the run.)
+
+---
+
+<!-- _class: lead -->
+
+# Lesson of the Story: Don't invent cancer.
 
 ---
 
