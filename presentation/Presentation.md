@@ -190,6 +190,70 @@ and we have infinitely many of these.
 
 ---
 
+<!-- _header: The (More) General Model -->
+
+## The New Model
+
+Let $S = \{A, C, D\}$ where $C$ is for cancer. The sequence of transition matrix can be defined by
+$$
+P = \begin{bmatrix}
+    1 - {}_t q_x - c_t & c_t & {}_t q_x \\
+    0 & 1 - d_t & d_t \\
+    0 & 0 & 1
+\end{bmatrix}
+$$
+where $c_t$ is the probability of being diagnosed with cancer at year $t$ and $d_t$ is the probability of dying from cancer at year $t$.
+
+---
+
+<!-- _header: The (More) General Model -->
+
+#### Rate of Getting Cancer
+
+Fitted with $f(x) = a e^{-\frac{(x-b)^2}{c}}$
+
+<img src="graphics/plot4.png" class="report"/>
+
+---
+
+<!-- _header: The (More) General Model -->
+
+#### Mortality Rate of Cancer
+
+Fitted with $f(x) = ax^4 + bx^3 + cx^2 + dx + k$
+
+<img src="graphics/plot7.png" class="report"/>
+
+---
+
+<!-- _header: The (More) General Model -->
+
+### All the Probabilities Together
+
+<img src="graphics/plot8.png" class="report"/>
+
+---
+
+<!-- _header: The (More) General Model -->
+
+## Probability of dying or living for longer than another $t$ years
+
+<img src="graphics/plot9.png" class="report"/>
+
+---
+
+<!-- _header: The (More) General Model -->
+
+## Expected Time Left to Live
+
+Using the same strategy as before based on the previous graph, we have that
+$$
+\text{E}[T] \approx 66
+$$
+(It's more like around 66-70 depending on the run.)
+
+---
+
 <!-- _class: lead -->
 
 # Thank you!
